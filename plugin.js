@@ -290,14 +290,14 @@ PieChart.prototype.resize = function (options) {
   /* ------- PIE TITLE -------*/
   this.base
     .select(".piechart__title")
-    .attr("transform", "translate(" + 0 + "," + this.height / 3.33 + ")")
+    .attr("transform", "translate(" + 0 + "," + this.height / 3.1 + ")")
     .text(this.settings.xTitle);
 
   this.svg
     .select(".piechart__labels")
     .attr(
       "transform",
-      "translate(" + this.width / 2.5 + "," + this.height / 1.25 + ")"
+      "translate(" + this.width / 2.5 + "," + this.height / 1.23 + ")"
     );
   // .style("transform", "translateX(" + (this.width - 80) + "px)");
 };
@@ -323,8 +323,8 @@ PieChart.prototype.change = function (data) {
     })
     .attr("transform", function (d) {
       var _d = that.arc.centroid(d);
-      _d[0] *= 2.3; //multiply by a constant factor
-      _d[1] *= 2.3; //multiply by a constant factor
+      _d[0] *= 2.5; //multiply by a constant factor
+      _d[1] *= 2.4; //multiply by a constant factor
       return "translate(" + _d + ")";
     })
     .attr("dy", "0.40em")
@@ -343,14 +343,14 @@ PieChart.prototype.change = function (data) {
     .insert("path")
     .on("mouseover", function (datum, i) {
       d3.select(this).transition().duration(200).attr({
-        transform: "scale(0.95)",
+        transform: "scale(1.05)",
       });
 
       d3.select(`.piechart__slice-text-${i}`).classed(`opacity-0`, false);
     })
     .on("mouseout", function (datum, i) {
       d3.select(this).transition().duration(200).attr({
-        transform: "scale(0.9)",
+        transform: "scale(1)",
       });
 
       d3.select(`.piechart__slice-text-${i}`).classed(`opacity-0`, true);
@@ -358,9 +358,9 @@ PieChart.prototype.change = function (data) {
     .style("fill", function (d, i) {
       return that.colorPallete[i];
     })
-    .attr({
-      transform: "scale(0.9)"
-    })
+    // .attr({
+    //   transform: "scale(0.9)"
+    // })
     .attr("class", "piechart__slice");
 
   slice.exit().remove();
