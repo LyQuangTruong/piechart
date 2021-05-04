@@ -343,14 +343,14 @@ PieChart.prototype.change = function (data) {
     .insert("path")
     .on("mouseover", function (datum, i) {
       d3.select(this).transition().duration(200).attr({
-        transform: "scale(0.9)",
+        transform: "scale(0.95)",
       });
 
       d3.select(`.piechart__slice-text-${i}`).classed(`opacity-0`, false);
     })
     .on("mouseout", function (datum, i) {
       d3.select(this).transition().duration(200).attr({
-        transform: "scale(0.8)",
+        transform: "scale(0.9)",
       });
 
       d3.select(`.piechart__slice-text-${i}`).classed(`opacity-0`, true);
@@ -359,7 +359,7 @@ PieChart.prototype.change = function (data) {
       return that.colorPallete[i];
     })
     .attr({
-      transform: "scale(0.8)"
+      transform: "scale(0.9)"
     })
     .attr("class", "piechart__slice");
 
