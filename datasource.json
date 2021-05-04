@@ -1,0 +1,18 @@
+[
+  {
+    "adaptor": "firebase",
+    "firebase": {
+      "apiKey": "AIzaSyD-8W1lS55MZAF7CR2XoIB3LzKjaDZN0ak",
+      "authDomain": "aws-signature-request.firebaseapp.com",
+      "databaseURL": "https://aws-signature-request-default-rtdb.firebaseio.com",
+      "projectId": "aws-signature-request",
+      "storageBucket": "aws-signature-request.appspot.com",
+      "messagingSenderId": "816249038078"
+    },
+    "limit": 1000,
+    "ref": "/",
+    "title": "firebase",
+    "id": "fireabse",
+    "name": "firebase"
+  }
+]

@@ -1,0 +1,24 @@
+.piechart {
+  width: 100%;
+}
+
+.piechart path.piechart__slice {
+  stroke-width: 0;
+}
+
+.piechart polyline {
+  opacity: .1;
+  stroke: black;
+  stroke-width: 1px;
+  fill: none;
+}
+
+.domain {
+  fill: none;
+  stroke: #e2e2e2;
+  stroke-width: 1;
+}
+
+.opacity-0 {
+  opacity: 0;
+}

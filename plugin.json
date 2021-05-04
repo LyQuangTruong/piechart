@@ -1,0 +1,88 @@
+{
+	"defaultSettings": {
+		"label": "gender",
+		"value": "temperature",
+		"timestamp": "ts",
+		"xTitle": "Percentage by age",
+		"filterRange": "[[0, 33.99], [34, 34.9999], [35, 35.9999], [36, 36.9999], [37, 37.9999], [37.5, 50]]",
+		"labelList": "[\"-34\",\"34-\",\"35-\",\"36-\",\"37-\",\"37.5-\"]"
+	},
+	"sampleData": [
+		{
+			"age": 53,
+			"camera_location": "UH02",
+			"country": "JPN",
+			"gender": "male",
+			"image_datetime": "2021-02-11T07:45:01.175+09:00",
+			"temperature": 34.63957595825195,
+			"ts": 1612997101175
+		},
+		{
+			"age": 53,
+			"camera_location": "UH02",
+			"country": "JPN",
+			"gender": "male",
+			"image_datetime": "2021-02-11T07:45:01.685+09:00",
+			"temperature": 35.639530181884766,
+			"ts": 1612997101685
+		},
+		{
+			"age": 31,
+			"camera_location": "UH02",
+			"country": "JPN",
+			"gender": "female",
+			"image_datetime": "2021-02-11T07:55:58.954+09:00",
+			"temperature": 37.90892028808594,
+			"ts": 1612997758954
+		},
+		{
+			"age": 39,
+			"camera_location": "UH02",
+			"country": "JPN",
+			"gender": "female",
+			"image_datetime": "2021-02-11T07:55:59.816+09:00",
+			"temperature": 35.80034637451172,
+			"ts": 1612997759816
+		},
+		{
+			"age": 39,
+			"camera_location": "UH02",
+			"country": "JPN",
+			"gender": "female",
+			"image_datetime": "2021-02-11T07:56:00.990+09:00",
+			"temperature": 35.89982223510742,
+			"ts": 1612997760990
+		},
+		{
+			"age": 31,
+			"camera_location": "UH02",
+			"country": "JPN",
+			"gender": "male",
+			"image_datetime": "2021-02-11T07:56:18.681+09:00",
+			"temperature": 35.88852310180664,
+			"ts": 1612997778681
+		}
+	],
+	"settingSchema": [
+		{
+			"type": "text",
+			"name": "labelList",
+			"help": "Label list"
+		},
+		{
+			"type": "key",
+			"name": "value",
+			"help": "Please specify the key of the data representing the value."
+		},
+		{
+			"type": "text",
+			"name": "filterRange",
+			"help": "Filter range"
+		},
+		{
+			"type": "text",
+			"name": "xTitle",
+			"help": "X axis title"
+		}
+	]
+}
